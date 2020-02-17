@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+	<style>
+    
+.menue{
+    width:95vw;
+    height: 25px;
+    opacity:100;
+    color: white;
+    background-color: white;
+    border: 2px solid white;
+
+}
+
+.container {
+    display: inline-block;
+    cursor: pointer;
+}
+ 
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+ 
+.change .bar2 {opacity: 0;}
+ 
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+}
+.change .menue {color: black;
+    background-color: gainsboro;
+    border: 2px solid red;
+    margin-top: 2px;}
+
+    transform: translateX(0px);
+
+.change .container2{
+    transition-property: height;
+    transition-duration: 4s;
+}
+.container2:hover {
+height: 150px;
+background: silver;
+}
+    
+
+
+
+.menu{
+  padding: 0px;
+  margin:0px;
+  
+}
+.menu li{
+  float:left;
+  list-style:none;
+}
+.menu li a{
+  padding: 20px 15px;
+  display: inline-block;
+  text-decoration:none;
+  color: #ff5252;
+  width: 1490px;
+}
+.menu li:hover a{
+    background: #333;
+    color: #fff;
+}
+.menu li ul{
+   margin: 0;
+   padding: 0;
+}
+
+.menu li ul{
+   margin: 0;
+   padding: 0;
+   position: absolute;
+   z-index: 100;
+   display:none;
+}
+.menu li:hover ul{
+  display:block;
+}
+.menu li ul li{
+  display:block;
+  width: 100%;
+}
+.menu li ul li a{
+  width: 100%;
+}
+
+
+
+.zdjecia{
+    margin: 10px;
+    border: 3px solid red;
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="container" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+            <div class="container2"></div>
+                <div class="menue" >1</div>
+                <div class="menue" >2</div>
+                <div class="menue" >3</div>
+                <div class="menue" >4</div>
+            </div>
+    </div>
+
+    
+
+    <br>
+    <img src="C:\Users\Karol\Desktop\img\ford.jpg" width="200" height="150" class="zdjecia">
+    <img src="C:\Users\Karol\Desktop\img\acura.jpg" width="200" height="150" class="zdjecia">
+    <img src="C:\Users\Karol\Desktop\img\bentley.jpg" width="200" height="150" class="zdjecia">
+    <img src="C:\Users\Karol\Desktop\img\bmw.jpg" width="200" height="150" class="zdjecia">
+    <img src="C:\Users\Karol\Desktop\img\bujaj.jpg" width="200" height="150" class="zdjecia">
+    <img src="C:\Users\Karol\Desktop\img\daihatsu.jpg" width="200" height="150" class="zdjecia">
+    <img src="C:\Users\Karol\Desktop\img\gmc.jpg" width="200" height="150" class="zdjecia">
+    <img src="C:\Users\Karol\Desktop\img\isetta.jpg" width="200" height="150" class="zdjecia">
+    <img src="C:\Users\Karol\Desktop\img\lambo.jpg" width="200" height="150" class="zdjecia">
+    <img src="C:\Users\Karol\Desktop\img\nissan.jpg" width="200" height="150" class="zdjecia">
+    <img src="C:\Users\Karol\Desktop\img\porsche.jpg" width="200" height="150" class="zdjecia">
+    <img src="C:\Users\Karol\Desktop\img\saab.jpg" width="200" height="150" class="zdjecia">
+    
+    <script>
+        function myFunction(x) {
+            x.classList.toggle("change");
+        }
+        </script>
+
+</body>
+</html>
